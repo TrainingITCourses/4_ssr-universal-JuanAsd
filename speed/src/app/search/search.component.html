@@ -1,0 +1,7 @@
+<div>
+  <app-search-filter-criteria (search)="onSelectCriteria($event)"></app-search-filter-criteria>
+  <app-search-filter-launches (searchClick)="onSearch($event)" [launchesList]="filteredLaunchesList"></app-search-filter-launches>
+  <app-counter [counterLength]="filteredLaunches.length"></app-counter>
+  <app-filtered-launches [launches]="filteredLaunches"></app-filtered-launches>
+  
+</div>
